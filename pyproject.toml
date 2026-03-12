@@ -1,0 +1,31 @@
+[build-system]
+requires = ["setuptools>=61.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "kafka-ad-stream-project"
+version = "0.1.0"
+description = "A Kafka streaming project for ad events."
+readme = "README.md"
+requires-python = ">=3.9"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+dependencies = [
+    "pyspark==3.5.0",
+    "confluent-kafka[avro]",
+    "fastavro",
+    "requests",
+    "Faker",
+    "numpy",
+]
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = [
+        "ad_stream_producer*",
+        "consumer*",
+        "data_generator*",
+        "metrics*"
+    ]

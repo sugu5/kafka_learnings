@@ -1,0 +1,16 @@
+{
+ "type": "record",
+ "name": "AdEvent",
+ "namespace": "ads",
+ "fields": [
+   {"name": "event_id", "type": "string"},
+   {"name": "event_time", "type": "string"},
+   {"name": "user_id", "type": "string"},
+   {"name": "campaign_id", "type": "int"},
+   {"name": "ad_id", "type": "int"},
+   {"name": "device", "type": "string"},
+   {"name": "country", "type": "string"},
+   {"name": "event_type", "type": "string"},
+   {"name": "ad_creative_id", "type": ["null", "string"], "default": null}
+ ]
+}
