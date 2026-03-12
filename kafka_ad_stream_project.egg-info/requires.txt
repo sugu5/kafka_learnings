@@ -1,0 +1,6 @@
+pyspark==3.5.0
+confluent-kafka[avro]
+fastavro
+requests
+Faker
+numpy
