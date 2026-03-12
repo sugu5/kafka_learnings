@@ -83,6 +83,7 @@ spark = (SparkSession.builder
          .config("spark.sql.streaming.forceDeleteTempCheckpointLocation", "true")
          .getOrCreate())
 
+
 # Set log level to reduce noise
 spark.sparkContext.setLogLevel("ERROR")
 
